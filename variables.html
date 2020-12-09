@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<body>
+<ul style="cursor:pointer">
+<li> Say Zero </li>
+<li> Say One </li>
+<li> Say Two </li>
+</ul>
+</body>
+<script>
+const items = document.querySelectorAll('li');
+console.log(items)
+	for(let i = 0; i< items.length; i++) {
+		console.log(i)
+		console.log(items[i])
+		items[i].addEventListener('click', () => { console.log(i); })
+	};
+</script>
+</html>
